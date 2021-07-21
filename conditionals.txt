@@ -1,0 +1,9 @@
+def getSumOfLastDigits(numList):
+	sum=0
+	rem=0
+	for i in range(0,len(numList)):
+		rem = numList[i] % (10)
+		sum = sum + rem
+	return sum
+
+print(getSumOfLastDigits([1, 23, 456]))
